@@ -1,0 +1,189 @@
+/*
+* Global mixins for without effort framework
+*/
+
+$ipad-portrait: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)";
+$ipad-landscape: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)";
+$iphone-portrait: "only screen (min-device-width: 320px) and (orientation: portrait)";
+$iphone-landscape:" only screen and (min-device-width: 480px) and (orientation: landscape)";
+$iphone-rd-portrait: "only screen and (min-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5)";
+$iphone-rd-landscape: "only screen and (min-device-width: 960px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)";
+$ipad-rd-portrait: "only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)";
+$ipad-rd-landscape: "only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)";
+
+// The default color for box shadows
+$box-shadow-color: rgba(0,0,0,0.25) !default;
+
+// The default horizontal offset. Positive is to the right.
+$box-shadow-x: 0px !default;
+
+// The default vertical offset. Positive is down.
+$box-shadow-y: 0px !default;
+
+// The default blur length.
+$box-shadow-blur: 5px !default;
+
+// The default spread length.
+$box-shadow-spread : false !default;
+
+// The default shadow inset: inset or false (for standard shadow).
+$box-shadow-inset : false !default;
+
+@mixin box-sizing($size: content-box){
+    -webkit-box-sizing: $size;
+    -moz-box-sizing: $size;
+    box-sizing: $size;
+}
+
+@mixin font-smoothing($aliased: subpixel-antialiased){
+    -webkit-font-smoothing: $aliased;
+     font-smoothing: $aliased;
+}
+
+@mixin border-radius($radius:6px){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius:$radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+    -webkit-background-clip: padding-box;-moz-background-clip: padding-box;background-clip: padding-box;
+}
+
+@mixin custom-border-radius($topleft: 6px, $topright: 6px, $bottomleft: 6px, $bottomright: 6px){
+    -webkit-border-radius: $topleft $topright $bottomright $bottomleft;
+    -moz-border-radius: $topleft $topright $bottomright $bottomleft;
+    -ms-border-radius: $topleft $topright $bottomright $bottomleft;
+    -o-border-radius: $topleft $topright $bottomright $bottomleft;
+    border-radius: $topleft $topright $bottomright $bottomleft;
+    -webkit-background-clip: padding-box;-moz-background-clip: padding-box;background-clip: padding-box;
+}
+
+@mixin column($count: 2, $gap: 10px){
+    -moz-column-count: $count;
+    -moz-column-gap: $gap;
+    -webkit-column-count: $count;
+    -webkit-column-gap: $gap;
+    -o-column-count: $count;
+    -o-column-gap: $gap;
+    -ms-column-count: $count;
+    -ms-column-gap: $gap;
+    column-count: $count;
+    column-gap: $gap;
+}
+
+@mixin default-box-shadow($shadow){
+    -webkit-box-shadow:$shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow:$shadow;
+    -o-box-shadow:$shadow;
+    box-shadow:$shadow;
+}
+
+@mixin box-shadow($shadow-1: $default, $shadow-2: 0, $shadow-3: 0, $shadow-4: 0, $shadow-5: 0, $shadow-6: 0, $shadow-7: 0, $shadow-8: 0, $shadow-9: 0, $shadow-10: 0) {
+    $shadow : compact($shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10);
+    $other: $shadow-1;
+    @each $new in $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10 {
+        @if not ($new == 0){$other: $other, $new};
+    }
+    @include default-box-shadow($other);
+}
+
+@mixin single-box-shadow($x: 0px, $y: 0px, $blur: false, $color: rgba(0,0,0,0.25), $inset: false, $spread: false){
+    @if not ($inset == true or $inset == false or $inset == inset){
+        @warn "$inset expected to be true or the inset keyword. Got #{$inset} instead. Using: inset";
+    } @else {
+        $full : $x $y;
+        @if $blur {$full: $full $blur;}
+        @if $color {$full: $full $color;}
+        @if $inset {$full: $full $inset;}
+        @if $spread {$full: $full $spread;}
+    }
+    @include box-shadow($full);
+}
+
+@mixin box-sizing($params){
+    -webkit-box-sizing: $params;
+    -moz-box-sizing: $params;
+    -ms-box-sizing: $params;
+    box-sizing: $params;
+}
+
+@mixin appearance($params){
+    -webkit-appearance: $params;
+    -moz-appearance: $params;
+    appearance: $params;
+}
+
+@mixin transitions($property: all, $duration: .5s, $animation: ease-in-out, $delay: 0s){
+    -webkit-transition: $property $duration $animation $delay;
+    -moz-transition: $property $duration $animation $delay;
+    -ms-transition: $property $duration $animation $delay;
+    -o-transition: $property $duration $animation $delay;
+    transition: $property $duration $animation $delay;
+}
+
+@mixin transforms($deg: 0deg){
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    transform: rotate($deg);
+}
+
+@mixin image-linear-gradient($url, $origin: top, $start: rgba(255,255,255,1), $stop: rgba(0,0,0,1)){
+    background: $url $start;
+    background: $url, -webkit-linear-gradient($origin, $start, $stop);
+    background: $url, -moz-linear-gradient($origin, $start, $stop);
+    background: $url, -ms-linear-gradient($origin, $start, $stop);
+    background: $url, -o-linear-gradient($origin, $start, $stop);
+    background: $url, linear-gradient($origin, $start, $stop);
+}
+
+@mixin linear-gradient($origin: top, $start: rgba(255,255,255,1), $stop: rgba(0,0,0,1)){
+    background-color: $start;
+    background: -webkit-linear-gradient($origin, $start, $stop);
+    background: -moz-linear-gradient($origin, $start, $stop);
+    background: -ms-linear-gradient($origin, $start, $stop);
+    background: -o-linear-gradient($origin, $start, $stop);
+    background: linear-gradient($origin, $start, $stop);
+}
+
+@mixin default-linear-gradient($origin, $gradient){
+    background: -webkit-linear-gradient($origin, $gradient);
+    background: -moz-linear-gradient($origin, $gradient);
+    background: -ms-linear-gradient($origin, $gradient);
+    background: -o-linear-gradient($origin, $gradient);
+    background: linear-gradient($origin, $gradient);
+}
+
+@mixin complex-linear-gradient($origin, $gradient-1: $default, $gradient-2: 0, $gradient-3: 0, $gradient-4: 0, $gradient-5: 0, $gradient-6: 0, $gradient-7: 0, $gradient-8: 0, $gradient-9: 0, $gradient-10: 0) {
+    $gradient : compact($gradient-2, $gradient-3, $gradient-4, $gradient-5, $gradient-6, $gradient-7, $gradient-8, $gradient-9, $gradient-10);
+    $other: $gradient-1;
+    @each $new in $gradient-2, $gradient-3, $gradient-4, $gradient-5, $gradient-6, $gradient-7, $gradient-8, $gradient-9, $gradient-10 {
+        @if not ($new == 0){$other: $other, $new};
+    }
+    @include default-linear-gradient($origin, $other);
+}
+
+@mixin background-image-retina($image) {
+    background-image: image-url($image);
+    // If we have a retina image then add styles for it too
+    @if file_exists(retina_filename($image)){
+        @media only screen and (-webkit-min-device-pixel-ratio: 2){
+            @include background-size(image-width($image) auto);
+            background-image: image-url(retina_filename($image));
+        }
+    }
+}
+
+@mixin inline-background-image-retina($image) {
+    background-image: inline-image($image);
+
+    // If we have a retina image then add styles for it too
+    @if file_exists(retina_filename($image)){
+        @media only screen and (-webkit-min-device-pixel-ratio: 2){
+            @include background-size(image-width($image) auto);
+            background-image: inline-image(retina_filename($image));
+        }
+    }
+}
