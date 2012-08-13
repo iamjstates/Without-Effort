@@ -1,0 +1,368 @@
+/*
+* Global mixins for without effort framework
+*/
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.wrapper {
+  margin: 0 2%; }
+
+.space-14, .space-24, .space-34, .space-13, .space-23, .space-44, .golden-large, .golden-small, .modified-golden-large, .modified-golden-small, .dashboard-24 {
+  display: inline-block;
+  vertical-align: top; }
+
+.space-14:before, .space-24:before, .space-13:before, .space-23:before, .space-34:before, .space-44:before, .golden-large:before, .golden-small:before, .modified-golden-large:before, .modified-golden-small:before, .dashboard-24:before, .centered:before {
+  content: " ";
+  height: 10px;
+  background: transparent;
+  display: block; }
+
+.space-14:after, .space-24:after, .space-13:after, .space-23:after.space-34:after, .space-44:after, .golden-large:after, .golden-small:after, .modified-golden-large:after, .modified-golden-small:after, .dashboard-24:after, .centered:before {
+  content: " ";
+  height: 10px;
+  background: transparent;
+  display: block; }
+
+.start {
+  margin-right: 1%; }
+
+.space-14 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 24.15%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-14 {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-14 {
+      width: 50%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-14 {
+      width: 24.15%; } }
+
+.space-24 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 49%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-24 {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-24 {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-24 {
+      width: 49%; } }
+
+.dashboard-24 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 48.5%;
+  padding: 1em 1em 0.4em;
+  min-height: 160px; }
+
+.space-34 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 74%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-34 {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-34 {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-34 {
+      width: 74%; } }
+
+.space-44 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 98.3%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-44 {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-44 {
+      width: 98.3%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-44 {
+      width: 98.3%; } }
+
+.centered {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 90%;
+  padding: 1em; }
+
+.space-13 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32.563333333333333%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-13 {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-13 {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-13 {
+      width: 32.563333333333333%; } }
+
+.space-23 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 65.666666666666666%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-23 {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-23 {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-23 {
+      width: 65.666666666666666%%; } }
+
+.golden-large {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 61.666666666666666%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .golden-large {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .golden-large {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .golden-large {
+      width: 61.666666666666666%; } }
+
+.golden-small {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 37.333333333333333%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .golden-small {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .golden-small {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .golden-small {
+      width: 37.333333333333333%; } }
+
+.modified-golden-large {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 71%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .modified-golden-large {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .modified-golden-large {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .modified-golden-large {
+      width: 71%; } }
+
+.modified-golden-small {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 28.333333333333333%;
+  padding: 1em 1em 0.4em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .modified-golden-small {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .modified-golden-small {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .modified-golden-small {
+      width: 28.333333333333333%; } }
+
+.space-14-form, .space-24-form, .space-34-form, .space-13-form, .space-23-form, .space-44-form, .form-default {
+  display: inline-block;
+  vertical-align: top; }
+
+.space-24-form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 49%;
+  padding: 0.4em 1em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-24-form {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-24-form {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-24-form {
+      width: 49%; } }
+
+.space-13-form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 32.33333333333333%;
+  padding: 0.4em 1em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-13-form {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-13-form {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-13-form {
+      width: 32.333333333333333%; } }
+
+.space-23-form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 65.2%;
+  padding: 0.4em 1em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-23-form {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-23-form {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-23-form {
+      width: 65.2%; } }
+
+.space-14-form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 24.15%;
+  padding: 0.4em 1em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-14-form {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-14-form {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-14-form {
+      width: 25.15%; } }
+
+.space-34-form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 74.45%;
+  padding: 0.4em 1em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-34-form {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-34-form {
+      width: 49%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-34-form {
+      width: 74.45%; } }
+
+.space-44-form, .form-default {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 98.45%;
+  padding: 0.4em 1em; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .space-44-form, .form-default {
+      width: 98.3%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-44-form, .form-default {
+      width: 98.3%; } }
+  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+    .space-44-form, .form-default {
+      width: 98.3%; } }
+
+.space-14-form:first-child, .space-24-form:first-child, .space-34-form:first-child, .space-13-form:first-child, .space-44-form:first-child {
+  float: left; }
+
+.space-auto {
+  width: auto; }
+
+.clear:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.no-padding {
+  padding: 0; }
+
+.padding-left {
+  padding: 0 0 0 1em; }
+
+.padding-right {
+  padding: 0 1em 0 0; }
+
+.padding-top {
+  padding: 1em 0 0; }
+
+.padding-bottom {
+  padding: 0 0 1em; }
+
+.text-right {
+  text-align: right; }
+
+p, h1, h2, h3, address, time {
+  margin: 0 1%; }
+
+p:first-of-type {
+  padding: 10px 0 15px 0; }
+
+p {
+  padding: 0 0 15px 0; }
+
+p:last-of-type {
+  padding: 0; }
+
+form {
+  margin: 1%; }

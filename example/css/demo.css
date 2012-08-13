@@ -1,0 +1,27 @@
+/*
+* Global mixins for without effort framework
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%;
+  font-size: 62.5%; }
+
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  z-index: -10;
+  font: normal normal normal 1.5rem/1.618 "Helvetica Neue", "GyreHerosRegular", Arial, Helvetica, sans-serif;
+  /*fall back*/
+  font-size: 15px;
+  word-spacing: 2px;
+  color: #424242;
+  background: #f0f0f0 url(../images/background.jpg); }
+
+.demo {
+  background: #e89c53; }
+
+p {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
