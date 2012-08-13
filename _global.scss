@@ -2,14 +2,38 @@
 * Global mixins for without effort framework
 */
 
-$ipad-portrait: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)";
-$ipad-landscape: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)";
-$iphone-portrait: "only screen (min-device-width: 320px) and (orientation: portrait)";
-$iphone-landscape:" only screen and (min-device-width: 480px) and (orientation: landscape)";
-$iphone-rd-portrait: "only screen and (min-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5)";
-$iphone-rd-landscape: "only screen and (min-device-width: 960px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)";
-$ipad-rd-portrait: "only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)";
-$ipad-rd-landscape: "only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)";
+@mixin responsive($media){
+    @if $media == phone {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { @content; }
+    }
+    @else if $media == phone-landscape {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { @content; }
+    }
+    @else if $media == phone-retina {
+        @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3/2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) { @content; }
+    }
+    @else if $media == phone-retina-landscape {
+        @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 3/2) and (orientation: landscape), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (min-resolution: 1.5dppx) and (orientation: landscape) { @content; }
+    }
+    @else if $media == tablets {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { @content; }
+    }
+    @else if $media == tablets-landscape {
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { @content; }
+    }
+    @else if $media == tablets-retina{
+        @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2/1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) { @content; }
+    }
+    @else if $media == tablets-retina-landscape  {
+        @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2/1) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: landscape) { @content; }
+    }
+    @else if $media == desktop {
+        @media only screen and (min-width: 1024px) { @content; }
+    }
+    @else if $media == desktop-retina {
+        @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) { @content; }
+    }
+}
 
 // The default color for box shadows
 $box-shadow-color: rgba(0,0,0,0.25) !default;
