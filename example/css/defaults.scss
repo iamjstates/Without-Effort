@@ -1,0 +1,69 @@
+/*smaller version of reset.css*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+/* Corrects `inline-block` display not defined in IE 8/9.*/
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/* Prevents modern browsers from displaying `audio` without controls. */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/* Addresses styling for `hidden` attribute not present in IE 8/9. */
+[hidden] {
+    display: none;
+}
+/* Removes default margin. */
+
+body {
+    margin: 0;
+}
+
+/* Addresses `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 0.875em;
+}
+
+/* Re-set default cursor for disabled elements.*/
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
