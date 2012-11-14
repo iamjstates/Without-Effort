@@ -1,0 +1,21 @@
+@import 'global';
+
+*{margin:0;padding:0;}
+html,body{height:100%;font-size:87.5%;}
+body{
+    @include font-smoothing(subpixel-antialiased);
+    z-index:-10;
+    font: normal normal normal 1.0714rem/1.618 'Lato', 'Helvetica Neue','GyreHerosRegular',Arial, Helvetica, sans-serif;
+    /*fall back*/
+    font-size:15px;
+    word-spacing:1.2px;
+    color: rgb(66,66,66);
+    @include background-image-retina('../images/background');
+}
+
+.demo{
+    background: rgba(230, 230, 180,0.30);
+}
+p{
+    text-shadow:0 1px 0 rgba(255,255,255,0.45);
+}
