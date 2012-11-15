@@ -1,27 +1,32 @@
 /*
 * Global mixins for without effort framework
 */
+/* Assuming pixel size of 14px or 87.5% instead of 10px */
+/* Assuming pixel size of 14px or 87.5% instead of 10px */
 * {
   margin: 0;
   padding: 0; }
 
 html, body {
   height: 100%;
-  font-size: 62.5%; }
+  font-size: 87.5%; }
 
 body {
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
   z-index: -10;
-  font: normal normal normal 1.5rem/1.618 "Helvetica Neue", "GyreHerosRegular", Arial, Helvetica, sans-serif;
+  font: normal normal normal 1.0714rem/1.618 "Lato", "OpenSansRegular", "Helvetica Neue", "GyreHerosRegular", Arial, Helvetica, sans-serif;
   /*fall back*/
   font-size: 15px;
-  word-spacing: 2px;
+  word-spacing: 1.2px;
   color: #424242;
-  background: #f0f0f0 url(../images/background.jpg); }
+  background: url("../images/background.png"); }
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
+    body {
+      background: url("../images/background_@2x.png"); } }
 
 .demo {
-  background: #e89c53; }
+  background: rgba(230, 230, 180, 0.8); }
 
 p {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
