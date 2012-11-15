@@ -1,8 +1,7 @@
 /*
 * Global mixins for without effort framework
+* Assuming pixel size of 14px or 87.5% instead of 10px
 */
-/* Assuming pixel size of 14px or 87.5% instead of 10px */
-/* Assuming pixel size of 14px or 87.5% instead of 10px */
 * {
   margin: 0;
   padding: 0; }

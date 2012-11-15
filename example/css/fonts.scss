@@ -41,6 +41,52 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/open/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/open/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/open/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/open/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/open/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/open/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/open/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/open/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/open/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/open/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/open/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/open/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansBoldItalic';
+    src: url('../fonts/open/OpenSans-BoldItalic-webfont.eot');
+    src: url('../fonts/open/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/open/OpenSans-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/open/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1,h2,h3,h4,h5,h6{font-family: 'OpenSansBold';}
 h1{@include em-font-size(2.5708);letter-spacing: -0.0714em;font-weight: 900;}
 h2{@include em-font-size(2.2852);letter-spacing: -0.0714em;font-weight: 900;}
 h3{@include em-font-size(1.714);letter-spacing: -0.0714em;font-weight: 900;}

@@ -1,8 +1,8 @@
 /*
 * Global mixins for without effort framework
+* Assuming pixel size of 14px or 87.5% instead of 10px
 */
 
-/* Assuming pixel size of 14px or 87.5% instead of 10px */
 @mixin em-font-size($sizeValue: 1.0714){
     // We use a base of 15px
     font-size: $sizeValue + rem;
@@ -11,7 +11,6 @@
     font-size: $sizeValue + em;
 }
 
-/* Assuming pixel size of 14px or 87.5% instead of 10px */
 @mixin pixel-font-size($font-size: 15){
     font-size: ($font-size * 0.0714) + rem;
     font-size: $font-size + px;
