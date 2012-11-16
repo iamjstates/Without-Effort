@@ -119,7 +119,7 @@ input[disabled] {
   font-style: normal; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'OpenSansBold'; }
+  font-family: 'LatoBold'; }
 
 h1 {
   font-size: 2.5708rem;
@@ -162,7 +162,7 @@ time.default {
   overflow: hidden; }
 
 .wrapper {
-  margin: 0 2%; }
+  margin: 0 1% 0 1.5%; }
 
 .space-14, .space-24, .space-34, .space-13, .space-23, .space-44, .golden-large, .golden-small, .modified-golden-large, .modified-golden-small, .dashboard-24 {
   display: inline-block;
@@ -188,20 +188,20 @@ time.default {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 24.613333333333333333%;
+  width: 24.634333333333334%;
   padding: 1em 1em 0.4em; }
   @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
     .space-14 {
-      width: 24.613333333333333333%; } }
+      width: 24.634333333333334%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .space-14 {
-      width: 49.5%; } }
+      width: 24.634333333333334%; } }
   @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: landscape) {
     .space-14 {
-      width: 24.613333333333333333%; } }
+      width: 24.634333333333334%; } }
   @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) {
     .space-14 {
-      width: 24.613333333333333333%; } }
+      width: 24.634333333333334%; } }
   @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) {
     .space-14 {
       width: 98.3%; } }
