@@ -145,36 +145,36 @@
 }
 .space-24-form{
     @include box-sizing(border-box);
-    width:49%;
-    padding:0.4em 1em;
-    @include responsive(desktop-retina) { width: 49.5%; }
-    @include responsive(tablets-landscape) { width: 49.5%; }
+    width:49.75%;
+    padding:1em 1em 0.4em;
+    @include responsive(desktop-retina) { width: 49.75%; }
+    @include responsive(tablets-landscape) { width: 49.75%; }
     @include responsive(phone-retina) { width: 99.3% ;}
     @include responsive(phone) { width: 99.3%;}
 }
 .space-13-form{
     @include box-sizing(border-box);
-    width:32.33333333333333%;
-    padding:0.4em 1em;
-    @include responsive(desktop-retina) { width: 32.333333333333333%; }
-    @include responsive(tablets-landscape) { width: 49.5%; }
+    width:38.08333333333333%;
+    padding:1em 1em 0.4em;
+    @include responsive(desktop-retina) { width: 33.083333333333333%; }
+    @include responsive(tablets-landscape) { width: 49.75%; }
     @include responsive(phone-retina) { width: 99.3% ;}
     @include responsive(phone) { width: 99.3%;}
 }
 .space-23-form{
     @include box-sizing(border-box);
-    width:65.2%;
-    padding:0.4em 1em;
-    @include responsive(desktop-retina) { width: 65.2%; }
+    width:66.153333333333333333%;
+    padding:1em 1em 0.4em;;
+    @include responsive(desktop-retina) { width: 66.153333333333333333%; }
     @include responsive(tablets-landscape) { width: 49.5%; }
     @include responsive(phone-retina) { width: 99.3% ;}
     @include responsive(phone) { width: 99.3%;}
 }
 .space-14-form{
     @include box-sizing(border-box);
-    width:24.15%;
-    padding:0.4em 1em;
-    @include responsive(desktop-retina) { width: 25.15%; }
+    width:24.75%;
+    padding:1em 1em 0.4em;
+    @include responsive(desktop-retina) { width: 24.75%; }
     @include responsive(tablets-landscape) { width: 49.5%; }
     @include responsive(phone-retina) { width: 99.3% ;}
     @include responsive(phone) { width: 99.3%;}
@@ -182,7 +182,7 @@
 .space-34-form{
     @include box-sizing(border-box);
     width:74.45%;
-    padding:0.4em 1em;
+    padding:1em 1em 0.4em;;
     @include responsive(desktop-retina) { width: 74.45%; }
     @include responsive(tablets-landscape) { width: 49.5%; }
     @include responsive(phone-retina) { width: 99.3% ;}
@@ -191,7 +191,7 @@
 .space-44-form,.form-default{
     @include box-sizing(border-box);
     width:98.45%;
-    padding:0.4em 1em;
+    padding:1em 1em 0.4em;;
     @include responsive(tablets-landscape) { width: 99.3%; }
     @include responsive(desktop-retina) { width: 99.3%; }
     @include responsive(phone-retina) { width: 99.3% ;}

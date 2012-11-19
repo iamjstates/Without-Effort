@@ -142,7 +142,7 @@ input::-webkit-input-placeholder, ::-webkit-input-placeholder {
 input:-moz-placeholder, :-moz-placeholder, input:-ms-input-placeholder, :-ms-input-placeholder {
   color: rgba(50, 50, 72, 0.5);
   word-spacing: 1.5px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 input, textarea, select[multiple], select[size][multiple] {
   font: normal normal normal 1.0214rem/1.618 "OpenSansRegular", "Helvetica Neue", "GyreHerosRegular", Arial, Helvetica, sans-serif;
@@ -234,6 +234,14 @@ label,
   vertical-align: baseline;
   white-space: nowrap;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
+label > span {
+  display: block; }
+
+form-rows:before, form-rows:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
 
 .hide-text {
   text-indent: 100%;
@@ -535,14 +543,14 @@ label,
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 49%;
-  padding: 0.4em 1em; }
+  width: 49.75%;
+  padding: 1em 1em 0.4em; }
   @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-24-form {
-      width: 49.5%; } }
+      width: 49.75%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .space-24-form {
-      width: 49.5%; } }
+      width: 49.75%; } }
   @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) {
     .space-24-form {
       width: 99.3%; } }
@@ -555,14 +563,14 @@ label,
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 32.33333333333333%;
-  padding: 0.4em 1em; }
+  width: 38.08333333333333%;
+  padding: 1em 1em 0.4em; }
   @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-13-form {
-      width: 32.333333333333333%; } }
+      width: 33.083333333333333%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .space-13-form {
-      width: 49.5%; } }
+      width: 49.75%; } }
   @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) {
     .space-13-form {
       width: 99.3%; } }
@@ -575,11 +583,11 @@ label,
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 65.2%;
-  padding: 0.4em 1em; }
+  width: 66.153333333333333333%;
+  padding: 1em 1em 0.4em; }
   @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-23-form {
-      width: 65.2%; } }
+      width: 66.153333333333333333%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .space-23-form {
       width: 49.5%; } }
@@ -595,11 +603,11 @@ label,
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  width: 24.15%;
-  padding: 0.4em 1em; }
+  width: 24.75%;
+  padding: 1em 1em 0.4em; }
   @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-14-form {
-      width: 25.15%; } }
+      width: 24.75%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .space-14-form {
       width: 49.5%; } }
@@ -616,7 +624,7 @@ label,
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   width: 74.45%;
-  padding: 0.4em 1em; }
+  padding: 1em 1em 0.4em; }
   @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-34-form {
       width: 74.45%; } }
@@ -636,7 +644,7 @@ label,
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   width: 98.45%;
-  padding: 0.4em 1em; }
+  padding: 1em 1em 0.4em; }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .space-44-form, .form-default {
       width: 99.3%; } }
