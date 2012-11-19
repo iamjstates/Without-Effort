@@ -129,6 +129,112 @@ time.default {
   text-transform: uppercase;
   font-weight: 900; }
 
+/*
+* Global mixins for without effort framework
+* Assuming pixel size of 14px or 87.5% instead of 10px
+*/
+input::-webkit-input-placeholder, ::-webkit-input-placeholder {
+  color: rgba(50, 50, 72, 0.5);
+  word-spacing: 1.5px;
+  /*fall back*/
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+
+input:-moz-placeholder, :-moz-placeholder, input:-ms-input-placeholder, :-ms-input-placeholder {
+  color: rgba(50, 50, 72, 0.5);
+  word-spacing: 1.5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
+
+input, textarea, select[multiple], select[size][multiple] {
+  font: normal normal normal 1.0214rem/1.618 "OpenSansRegular", "Helvetica Neue", "GyreHerosRegular", Arial, Helvetica, sans-serif;
+  color: rgba(73, 62, 48, 0.95);
+  word-spacing: 1.5px;
+  width: 100%;
+  margin: 3px 0;
+  padding: 6px 0 6px 6px;
+  border: 1px solid #9696a7;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #ededf5;
+  background: -webkit-linear-gradient(top, #ededf5, white);
+  background: -moz-linear-gradient(top, #ededf5, white);
+  background: -ms-linear-gradient(top, #ededf5, white);
+  background: -o-linear-gradient(top, #ededf5, white);
+  background: linear-gradient(top, #ededf5, white);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset, 0 0 1px 0 rgba(50, 50, 50, 0.15);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset, 0 0 1px 0 rgba(50, 50, 50, 0.15);
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset, 0 0 1px 0 rgba(50, 50, 50, 0.15);
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset, 0 0 1px 0 rgba(50, 50, 50, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25) inset, 0 0 1px 0 rgba(50, 50, 50, 0.15); }
+
+textarea.large-textarea {
+  min-height: 300px; }
+
+textarea.medium-textarea {
+  min-height: 200px; }
+
+textarea.small-textarea {
+  min-height: 100px; }
+
+input:focus, input.input-text:focus, input.password:focus, textarea:focus, iframe.editor:focus, select[multiple]:focus, select[size][multiple]:focus {
+  outline: none;
+  background-color: rgba(226, 235, 200, 0.45);
+  background: -webkit-linear-gradient(top, rgba(226, 235, 200, 0.45), rgba(230, 230, 220, 0.5));
+  background: -moz-linear-gradient(top, rgba(226, 235, 200, 0.45), rgba(230, 230, 220, 0.5));
+  background: -ms-linear-gradient(top, rgba(226, 235, 200, 0.45), rgba(230, 230, 220, 0.5));
+  background: -o-linear-gradient(top, rgba(226, 235, 200, 0.45), rgba(230, 230, 220, 0.5));
+  background: linear-gradient(top, rgba(226, 235, 200, 0.45), rgba(230, 230, 220, 0.5));
+  border: 1px solid #73a519;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35) inset, 0 0 1px 0 rgba(160, 170, 130, 0.15), 0 0 3px #a0aa82;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35) inset, 0 0 1px 0 rgba(160, 170, 130, 0.15), 0 0 3px #a0aa82;
+  -ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35) inset, 0 0 1px 0 rgba(160, 170, 130, 0.15), 0 0 3px #a0aa82;
+  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35) inset, 0 0 1px 0 rgba(160, 170, 130, 0.15), 0 0 3px #a0aa82;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35) inset, 0 0 1px 0 rgba(160, 170, 130, 0.15), 0 0 3px #a0aa82;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
+
+input[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  background-color: whitesmoke;
+  background: -webkit-linear-gradient(top, whitesmoke, white);
+  background: -moz-linear-gradient(top, whitesmoke, white);
+  background: -ms-linear-gradient(top, whitesmoke, white);
+  background: -o-linear-gradient(top, whitesmoke, white);
+  background: linear-gradient(top, whitesmoke, white); }
+
+input[type='search']:focus {
+  outline: none; }
+
+input[type='file'] {
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  -ms-box-shadow: 0 0 0 transparent;
+  -o-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent; }
+
+label,
+.badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-weight: bold;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
+
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
@@ -163,7 +269,7 @@ time.default {
   box-sizing: border-box;
   width: 24.634333333333334%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-14 {
       width: 24.634333333333334%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -174,7 +280,7 @@ time.default {
       width: 24.634333333333334%; } }
   @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) {
     .space-14 {
-      width: 24.634333333333334%; } }
+      width: 49.5%; } }
   @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) {
     .space-14 {
       width: 99.3%; } }
@@ -189,7 +295,7 @@ time.default {
   box-sizing: border-box;
   width: 49.5%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-24 {
       width: 49.5%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -221,7 +327,7 @@ time.default {
   box-sizing: border-box;
   width: 74%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-34 {
       width: 74%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -247,10 +353,13 @@ time.default {
   box-sizing: border-box;
   width: 99.3%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-44 {
       width: 99.3%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .space-44 {
+      width: 99.3%; } }
+  @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: landscape) {
     .space-44 {
       width: 99.3%; } }
   @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) {
@@ -278,7 +387,7 @@ time.default {
   box-sizing: border-box;
   width: 32.925333333333333%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-13 {
       width: 32.925333333333333%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -304,7 +413,7 @@ time.default {
   box-sizing: border-box;
   width: 66.06666666666666%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-23 {
       width: 66.06666666666666%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -330,7 +439,7 @@ time.default {
   box-sizing: border-box;
   width: 61.666666666666666%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .golden-large {
       width: 61.666666666666666%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -356,7 +465,7 @@ time.default {
   box-sizing: border-box;
   width: 37.333333333333333%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .golden-small {
       width: 37.333333333333333%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -376,7 +485,7 @@ time.default {
   box-sizing: border-box;
   width: 71%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .modified-golden-large {
       width: 71%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -396,7 +505,7 @@ time.default {
   box-sizing: border-box;
   width: 28.333333333333333%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .modified-golden-small {
       width: 28.333333333333333%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -409,6 +518,14 @@ time.default {
     .modified-golden-small {
       width: 99.3%; } }
 
+.forms-row:before, .forms-row:after {
+  content: "";
+  display: table;
+  line-height: 0; }
+
+.forms-row:after {
+  clear: both; }
+
 .space-14-form, .space-24-form, .space-34-form, .space-13-form, .space-23-form, .space-44-form, .form-default {
   display: inline-block;
   vertical-align: top; }
@@ -420,7 +537,7 @@ time.default {
   box-sizing: border-box;
   width: 49%;
   padding: 0.4em 1em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-24-form {
       width: 49.5%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -440,7 +557,7 @@ time.default {
   box-sizing: border-box;
   width: 32.33333333333333%;
   padding: 0.4em 1em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-13-form {
       width: 32.333333333333333%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -460,7 +577,7 @@ time.default {
   box-sizing: border-box;
   width: 65.2%;
   padding: 0.4em 1em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-23-form {
       width: 65.2%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -480,7 +597,7 @@ time.default {
   box-sizing: border-box;
   width: 24.15%;
   padding: 0.4em 1em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-14-form {
       width: 25.15%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -500,7 +617,7 @@ time.default {
   box-sizing: border-box;
   width: 74.45%;
   padding: 0.4em 1em; }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-34-form {
       width: 74.45%; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -523,7 +640,7 @@ time.default {
   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .space-44-form, .form-default {
       width: 99.3%; } }
-  @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 2dppx) {
+  @media only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6 / 1), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx) {
     .space-44-form, .form-default {
       width: 99.3%; } }
   @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) {

@@ -1,6 +1,7 @@
 @import 'global';
 @import 'defaults.scss';
 @import 'fonts.scss';
+@import 'forms.scss';
 
 .hide-text {
     text-indent: 100%;
@@ -23,7 +24,7 @@
     @include responsive(desktop-retina) { width: 24.634333333333334%; }
     @include responsive(tablets-landscape) { width: 24.634333333333334%; }
     @include responsive(tablets-retina-landscape) {width:24.634333333333334%;}
-    @include responsive(tablets-retina){width:24.634333333333334%;}
+    @include responsive(tablets-retina){width:49.5%;}
     @include responsive(phone-retina) { width: 99.3% ;}
     @include responsive(phone) { width: 99.3% ;}
 }
@@ -59,7 +60,8 @@
     width:99.3%;
     padding:1em 1em 0.4em;
     @include responsive(desktop-retina) { width: 99.3%; }
-    @include responsive(tablets-landscape) { width: 99.3%; }
+    @include responsive(tablets-landscape) { width: 99.3%;}
+    @include responsive(tablets-retina-landscape) {width:99.3%;}
     @include responsive(tablets-retina){width:99.3%;}
     @include responsive(phone-retina) { width: 99.3% ;}
     @include responsive(phone) { width: 99.3%;}
@@ -128,6 +130,14 @@
     @include responsive(tablets-landscape) { width: 49.5%; }
     @include responsive(phone-retina) { width: 99.3% ;}
     @include responsive(phone) { width: 99.3%;}
+}
+.forms-row:before, .forms-row:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.forms-row:after {
+    clear: both;
 }
 .space-14-form,.space-24-form,.space-34-form,.space-13-form,.space-23-form,.space-44-form,.form-default{
     display:inline-block;
