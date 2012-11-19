@@ -154,7 +154,7 @@
 }
 .space-13-form{
     @include box-sizing(border-box);
-    width:38.08333333333333%;
+    width:33.08333333333333%;
     padding:1em 1em 0.4em;
     @include responsive(desktop-retina) { width: 33.083333333333333%; }
     @include responsive(tablets-landscape) { width: 49.75%; }
