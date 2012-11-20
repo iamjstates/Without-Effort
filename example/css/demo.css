@@ -36,6 +36,9 @@ body {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   margin-bottom: 5px; }
+  @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    .demo {
+      background: rgba(130, 130, 180, 0.8); } }
 
 p {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }

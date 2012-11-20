@@ -16,6 +16,7 @@ body{
 
 .demo{
     background: rgba(230, 230, 180, 0.8);
+    @include responsive(sample){background: rgba(130, 130, 180, 0.8);}
     @include border-radius(5px);
     margin-bottom: 5px;
 }
