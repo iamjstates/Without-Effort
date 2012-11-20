@@ -32,9 +32,10 @@
     @include box-sizing(border-box);
     width:49.5%;
     padding:1em 1em 0.4em;
-    @include responsive(phone-retina){width: 99.3%;}
     @include responsive(phone){width: 99.3%;}
-
+    @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(tablets){width:49.5%;}
+    @include responsive(tablets-retina){width:49.5%;}
 }
 .dashboard-24{
     @include box-sizing(border-box);
@@ -46,12 +47,11 @@
     @include box-sizing(border-box);
     width:74%;
     padding:1em 1em 0.4em;
-    @include responsive(desktop-retina){width: 74%;}
-    @include responsive(tablets-retina-landscape){width:74%;}
-    @include responsive(tablets-landscape){width: 49.5%;}
-    @include responsive(tablets-retina){width:74%;}
-    @include responsive(phone-retina){width: 99.3%;}
     @include responsive(phone){width: 99.3%;}
+    @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(tablets){width:74%;}
+    @include responsive(tablets-retina){width:74%;}
+    @include responsive(tablets-landscape){width: 74%;}
 }
 .space-44{
     @include box-sizing(border-box);
