@@ -316,16 +316,13 @@ form-rows:before, form-rows:after {
   @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: landscape) {
     .space-14 {
       width: 24.634333333333334%; } }
-  @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) {
-    .space-14 {
-      width: 49.5%; } }
   @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) {
     .space-14 {
       width: 99.3%; } }
   @media only screen and (min-device-width: 320px) and (orientation: portrait) {
     .space-14 {
       width: 99.3%; } }
-  @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) {
     .space-14 {
       width: 49.5%; } }
 
@@ -351,7 +348,7 @@ form-rows:before, form-rows:after {
   @media only screen and (min-device-width: 320px) and (orientation: portrait) {
     .space-24 {
       width: 99.3%; } }
-  @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2 / 1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) {
     .space-24 {
       width: 49.5%; } }
 
