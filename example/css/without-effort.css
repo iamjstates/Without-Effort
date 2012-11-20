@@ -226,6 +226,35 @@ input[type='file'] {
   -o-box-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent; }
 
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+button, input[type='button'], input[type='reset'], input[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button; }
+
+input[type='submit'], input[type='submit'].create, input[type='button'].create, button.create, input[type='submit'].edit, input[type='button'].edit, button.edit, input[type='submit'].update, input[type='button'].update, button.update {
+  font-size: 18px;
+  font-weight: 900;
+  color: #323232;
+  border: 1px solid #696e6e;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.45);
+  background-color: #e1e1e1;
+  background: -webkit-linear-gradient(top, #e1e1e1, #9b9b9b);
+  background: -moz-linear-gradient(top, #e1e1e1, #9b9b9b);
+  background: -ms-linear-gradient(top, #e1e1e1, #9b9b9b);
+  background: -o-linear-gradient(top, #e1e1e1, #9b9b9b);
+  background: linear-gradient(top, #e1e1e1, #9b9b9b);
+  /*@include box-shadow(0 0 10px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18), inset 0px -2px 0px rgba(0, 0, 0, 0.35), inset 0 -3px 0 rgba(255,255,255,0.3), inset 0px 14px 14px rgba(255, 255, 255, 0.10));*/
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18), inset 0px -4px 0px rgba(0, 0, 0, 0.35), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18), inset 0px -4px 0px rgba(0, 0, 0, 0.35), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18), inset 0px -4px 0px rgba(0, 0, 0, 0.35), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18), inset 0px -4px 0px rgba(0, 0, 0, 0.35), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18), inset 0px -4px 0px rgba(0, 0, 0, 0.35), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1); }
+
 label,
 .badge {
   display: inline-block;
