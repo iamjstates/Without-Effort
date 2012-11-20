@@ -237,8 +237,9 @@ button, input[type='button'], input[type='reset'], input[type='submit'] {
   appearance: button; }
 
 input[type='submit'], input[type='submit'].create, input[type='button'].create, button.create, input[type='submit'].edit, input[type='button'].edit, button.edit, input[type='submit'].update, input[type='button'].update, button.update {
-  font-size: 18px;
-  font-weight: 900;
+  font-family: 'OpenSansSemiBold';
+  font-size: 1.1em;
+  padding: 0.5em 0 0.8em;
   color: #323232;
   border: 1px solid #696e6e;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.45);
