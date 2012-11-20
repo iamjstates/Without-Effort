@@ -274,6 +274,58 @@ form-rows:before, form-rows:after {
   line-height: 0;
   content: ""; }
 
+select {
+  color: #323232;
+  font-size: 1.3rem;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  margin: 3px 0 0;
+  padding: 9px 40px 9px 10px;
+  border: 1px solid #aaaaaa;
+  font-weight: 900;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  background: url(../images/select.png) 97% 50% no-repeat #e6e6e6;
+  background: url(../images/select.png) 97% 50% no-repeat, -webkit-linear-gradient(top, #e6e6e6, #c8c8c8);
+  background: url(../images/select.png) 97% 50% no-repeat, -moz-linear-gradient(top, #e6e6e6, #c8c8c8);
+  background: url(../images/select.png) 97% 50% no-repeat, -ms-linear-gradient(top, #e6e6e6, #c8c8c8);
+  background: url(../images/select.png) 97% 50% no-repeat, -o-linear-gradient(top, #e6e6e6, #c8c8c8);
+  background: url(../images/select.png) 97% 50% no-repeat, linear-gradient(top, #e6e6e6, #c8c8c8); }
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1em;
+  margin: 0 0.25em 0 0;
+  padding: 0;
+  width: 1.25em;
+  height: 1.25em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  vertical-align: text-top; }
+
 .hide-text {
   text-indent: 100%;
   white-space: nowrap;
