@@ -26,8 +26,6 @@
     @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-landscape){width: 24.634333333333334%;}
     @include responsive(tablets-retina){width:49.5%;}
-    @include responsive(tablets-retina-landscape){width:24.634333333333334%;}
-    @include responsive(desktop-retina){width: 24.634333333333334%;}
 }
 .space-24{
     @include box-sizing(border-box);
