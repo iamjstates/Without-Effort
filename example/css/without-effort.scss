@@ -1,8 +1,8 @@
 @import 'global';
 @import 'defaults.scss';
 @import 'fonts.scss';
+@import '../fonts/font-awesome.scss';
 @import 'forms.scss';
-
 .hide-text {
     text-indent: 100%;
     white-space: nowrap;
@@ -23,6 +23,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-landscape){width: 24.634333333333334%;}
     @include responsive(tablets-retina){width:49.5%;}
     @include responsive(tablets-retina-landscape){width:24.634333333333334%;}
@@ -34,6 +35,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets){width:49.5%;}
     @include responsive(tablets-retina){width:49.5%;}
 }
@@ -49,6 +51,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets){width:74%;}
     @include responsive(tablets-retina){width:74%;}
     @include responsive(tablets-landscape){width: 74%;}
@@ -69,6 +72,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-retina){width:32.925333333333333%;}
     @include responsive(tablets-landscape){width: 32.925333333333333%;}
     @include responsive(tablets-retina-landscape){width:32.925333333333333%;}
@@ -80,6 +84,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-retina){width:66.06666666666666%;}
     @include responsive(tablets-landscape){width: 66.06666666666666;}
     @include responsive(tablets-retina-landscape){width: 66.06666666666666;}
@@ -91,6 +96,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-retina){width:61.66666666666666%;}
     @include responsive(tablets-retina-landscape){width: 61.66666666666666;}
     @include responsive(tablets-landscape){width: 61.66666666666666;}
@@ -102,6 +108,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-landscape){width: 49.5%;}
     @include responsive(desktop-retina) { width: 37.333333333333333%; }
 }
@@ -111,6 +118,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-landscape){width: 49.5%;}
     @include responsive(desktop-retina){width: 71%;}
 }
@@ -120,6 +128,7 @@
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets-landscape) {width: 49.5%;}
     @include responsive(desktop-retina){width: 28.333333333333333%;}
 
@@ -149,6 +158,7 @@
     padding:0.6em 0.8em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets){width: 49.73%;}
     @include responsive(desktop-retina){width: 33.043333333333333%;}
 }
@@ -158,6 +168,7 @@
     padding:0.6em 0.8em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets){width: 49.73%;}
     @include responsive(tablets-retina){width: 49.73%;}
     @include responsive(desktop-retina){width: 66.153333333333333333%;}
@@ -168,6 +179,7 @@
     padding:0.6em 0.8em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(tablets){width: 49.73%;}
     @include responsive(tablets-retina){width:49.73%;}
 }
@@ -176,6 +188,7 @@
     width:74.45%;
     padding:0.6em 0.8em;
     @include responsive(phone-retina){width: 99.3%;}
+    @include responsive(phone-retina-landscape){width: 99.3%;}
     @include responsive(phone){width: 99.3%;}
 }
 .space-44-form,.form-default{
