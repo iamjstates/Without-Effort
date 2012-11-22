@@ -1024,14 +1024,14 @@ select {
   label.select:before {
     content: "\f0dd";
     font-family: "FontAwesome";
-    font-size: 20px;
+    font-size: 1.42em;
     color: #323232;
     right: 2em;
     top: 2px;
     padding: 0 0 16px;
     position: absolute;
     pointer-events: none;
-    top: 1.8em; } }
+    top: 1.73em; } }
 @media all and (-o-min-device-pixel-ratio: 2 / 2) {
   input[type=range] {
     background: transparent;
