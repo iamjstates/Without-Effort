@@ -1026,12 +1026,12 @@ select {
     font-family: "FontAwesome";
     font-size: 20px;
     color: #323232;
-    left: 90%;
+    right: 2em;
     top: 2px;
     padding: 0 0 16px;
     position: absolute;
     pointer-events: none;
-    top: 35px; } }
+    top: 1.8em; } }
 @media all and (-o-min-device-pixel-ratio: 2 / 2) {
   input[type=range] {
     background: transparent;
