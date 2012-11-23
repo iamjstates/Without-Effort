@@ -133,9 +133,10 @@
 .forms-row:after {
     clear: both;
 }
-.space-14-form,.space-24-form,.space-34-form,.space-13-form,.space-23-form,.space-44-form,.form-default{
+.space-14-form,.space-24-form,.space-34-form,.space-13-form,.space-23-form{
     display:inline-block;
-    vertical-align:top
+    vertical-align:top;
+    float:left;
 }
 .space-24-form{
     @include box-sizing(border-box);
@@ -146,7 +147,7 @@
 }
 .space-13-form{
     @include box-sizing(border-box);
-    width:33.04333333333333%;
+    width:33.15333333333333%;
     padding:0.6em 0.8em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
@@ -165,7 +166,7 @@
 }
 .space-14-form{
     @include box-sizing(border-box);
-    width:24.67%;
+    width:24.87%;
     padding:0.6em 0.8em;
     @include responsive(phone){width: 99.3%;}
     @include responsive(phone-retina){width: 99.3%;}
@@ -186,9 +187,6 @@
     @include box-sizing(border-box);
     width:98.45%;
     padding:0.6em 0.8em;
-}
-.space-14-form:first-child,.space-24-form:first-child,.space-34-form:first-child,.space-13-form:first-child,.space-44-form:first-child{
-    float:left;
 }
 .space-auto{
     width:auto;
