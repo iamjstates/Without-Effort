@@ -24,12 +24,13 @@
     @include responsive(phone-retina){width: 100%;margin-left:0;}
     @include responsive(phone-retina-landscape){width: 100%;margin-left:0;}
     @include responsive(tablets-landscape){width: 24.63433333%;}
-    @include responsive(tablets-retina){width:49.75622222%;margin-left:inherit;}
+    @include responsive(tablets-retina){width:49.75622222%;margin-left: 0.48755556%;}
 }
 .space-24{
     @include box-sizing(border-box);
     width:49.75622222%;
     padding:1em 1em 0.4em;
+    margin-left: 0.48755556%;
     @include responsive(phone){width: 100%;margin-left:0;}
     @include responsive(phone-retina){width: 100%;margin-left:0;}
     @include responsive(phone-retina-landscape){width: 100%;margin-left:0;}
