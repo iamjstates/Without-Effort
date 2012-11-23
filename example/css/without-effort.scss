@@ -24,7 +24,7 @@
     @include responsive(phone-retina){width: 100%;margin-left:0;}
     @include responsive(phone-retina-landscape){width: 100%;margin-left:0;}
     @include responsive(tablets-landscape){width: 24.63433333%;}
-    @include responsive(tablets-retina){width:49.75622222%;margin-left: 0.48755556%;}
+    @include responsive(tablets-retina){width:49.75622222%;margin-left:inherit;}
 }
 .space-24{
     @include box-sizing(border-box);
