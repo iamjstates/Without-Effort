@@ -1387,8 +1387,11 @@ input[type=radio] {
 .rows:after, .forms-row:after {
   clear: both; }
 
-.rows {
-  background: rgba(0, 0, 0, 0.35); }
+.rows:after {
+  content: " ";
+  height: 0.5em;
+  display: block;
+  background: transparent; }
 
 .space-14-form, .space-24-form, .space-34-form, .space-13-form, .space-23-form {
   display: inline-block;
