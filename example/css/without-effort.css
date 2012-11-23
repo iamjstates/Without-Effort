@@ -1133,8 +1133,7 @@ input[type=radio] {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   width: 49.75622222%;
-  padding: 1em 1em 0.4em;
-  margin-left: 0.48755556%; }
+  padding: 1em 1em 0.4em; }
   @media only screen and (min-device-width: 320px) and (orientation: portrait) {
     .space-24 {
       width: 100%;
@@ -1147,6 +1146,10 @@ input[type=radio] {
     .space-24 {
       width: 100%;
       margin-left: 0; } }
+  @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
+    .space-24 {
+      width: 49.75622222%;
+      margin-left: 0.48755556%; } }
 
 .dashboard-24 {
   -webkit-box-sizing: border-box;
