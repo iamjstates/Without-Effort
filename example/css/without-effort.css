@@ -824,6 +824,22 @@ ul.icons {
 * Assuming pixel size of 14px or 87.5% instead of 10px
 */
 /*(min-device-width: 640px) and (max-device-width: 1136px)*/
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+legend {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.35em;
+  font-size: 1.714rem;
+  font-size: 23.996px;
+  font-size: 1.714em;
+  letter-spacing: -0.0714em;
+  font-weight: 900;
+  text-shadow: 0px 1px 1px #fff; }
+
 input::-webkit-input-placeholder, ::-webkit-input-placeholder {
   color: rgba(70, 70, 70, 0.5);
   word-spacing: 1.5px;
