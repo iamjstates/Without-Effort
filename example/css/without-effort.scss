@@ -11,7 +11,7 @@
 .wrapper{
     margin: 0 1%;
 }
-.space-14,.space-24,.space-34,.space-13,.space-23,.space-44,.golden-large,.golden-small,.modified-golden-large,.modified-golden-small,.dashboard-24{display:inline-block;vertical-align:top;float: left;margin-left: 0.4876%}
+.space-14,.space-24,.space-34,.space-13,.space-23,.space-44,.golden-large,.golden-small,.modified-golden-large,.modified-golden-small,.dashboard-24{display:inline-block;vertical-align:top;float: left;margin-left: 0.48755556%}
 .space-14:before,.space-24:before,.space-13:before,.space-23:before,.space-34:before,.space-44:before,.golden-large:before,.golden-small:before,.modified-golden-large:before,.modified-golden-small:before,.dashboard-24:before,.centered:before{content:" ";height:10px;background:transparent;display: block;}
 .space-14:after,.space-24:after,.space-13:after,.space-23:after.space-34:after,.space-44:after,.golden-large:after,.golden-small:after,.modified-golden-large:after,.modified-golden-small:after,.dashboard-24:after,.centered:before{content:" ";height: 10px;background:transparent;display: block;}
 .start{
@@ -22,23 +22,23 @@
 
 .space-14{
     @include box-sizing(border-box);
-    width:24.634333333333334%;
+    width:24.63433333%;
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 100%;}
     @include responsive(phone-retina){width: 100%;}
     @include responsive(phone-retina-landscape){width: 100%;}
-    @include responsive(tablets-landscape){width: 24.634333333333334%;}
+    @include responsive(tablets-landscape){width: 24.63433333%;}
     @include responsive(tablets-retina){width:49.5%;}
 }
 .space-24{
     @include box-sizing(border-box);
-    width:49.7562%;
+    width:49.75622222%;
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 100%;}
     @include responsive(phone-retina){width: 100%;}
     @include responsive(phone-retina-landscape){width: 100%;}
-    @include responsive(tablets){width:49.7562%;}
-    @include responsive(tablets-retina){width:49.7562%;}
+    @include responsive(tablets){width:49.75622222%;}
+    @include responsive(tablets-retina){width:49.75622222%;}
 }
 .dashboard-24{
     @include box-sizing(border-box);
@@ -70,21 +70,21 @@
 }
 .space-13{
     @include box-sizing(border-box);
-    width:33.00826666666%;
+    width:33.00829629%;
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 100%;}
     @include responsive(phone-retina){width: 100%;}
     @include responsive(phone-retina-landscape){width: 100%;}
-    @include responsive(tablets-retina){width:32.925333333333333%;}
+    @include responsive(tablets-retina){width:33.00829629%;}
 }
 .space-23{
     @include box-sizing(border-box);
-    width:66.504133333333%;
+    width:66.50414815%;
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 100%;}
     @include responsive(phone-retina){width: 100%;}
     @include responsive(phone-retina-landscape){width: 100%;}
-    @include responsive(tablets-retina){width:66.06666666666666%;}
+    @include responsive(tablets-retina){width:66.50414815%;}
 }
 .golden-large{
     @include box-sizing(border-box);
