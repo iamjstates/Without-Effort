@@ -1371,7 +1371,7 @@ input[type=radio] {
 
 .rows:after {
   content: " ";
-  height: 0.25em;
+  height: 0.4876em;
   display: block;
   background: transparent; }
 

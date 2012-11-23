@@ -2,6 +2,7 @@
 * Global mixins for without effort framework
 * Assuming pixel size of 14px or 87.5% instead of 10px
 */
+/*(min-device-width: 640px) and (max-device-width: 1136px)*/
 * {
   margin: 0;
   padding: 0; }
@@ -34,8 +35,7 @@ body {
   border-radius: 5px;
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
-  background-clip: padding-box;
-  margin-bottom: 5px; }
+  background-clip: padding-box; }
 
 p {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
