@@ -125,8 +125,8 @@
 
 }
 .stack{
-    @include responsive(tablets){width:49.75622222%;display: inline-block;}
-    @include responsive(tablets-retina){width:49.75622222%;display: inline-block;}
+    @include responsive(tablets){width:49.75622222%;display: inline-block;float:left;}
+    @include responsive(tablets-retina){width:49.75622222%;display: inline-block;float:left;}
 }
 .stack > .space-14{
     @include responsive(tablets){width:100%; background: #000;margin-left: 0;}
