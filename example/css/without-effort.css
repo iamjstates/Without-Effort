@@ -1124,7 +1124,7 @@ input[type=radio] {
   @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
     .space-14 {
       width: 49.75622222%;
-      margin-left: 0.48755556%; } }
+      margin: 0 0 0.48755556% 0.48755556%; } }
 
 .space-24 {
   -webkit-box-sizing: border-box;
@@ -1148,7 +1148,7 @@ input[type=radio] {
   @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
     .space-24 {
       width: 49.75622222%;
-      margin-left: 0.48755556%; } }
+      margin-left: 0 0 0.48755556% 0.48755556%; } }
 
 .dashboard-24 {
   -webkit-box-sizing: border-box;
