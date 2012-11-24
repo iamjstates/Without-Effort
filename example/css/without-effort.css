@@ -959,12 +959,11 @@ input[type='submit'], input[type='submit'].create, input[type='button'].create, 
   background: -ms-linear-gradient(top, #e1e1e1, #9b9b9b);
   background: -o-linear-gradient(top, #e1e1e1, #9b9b9b);
   background: linear-gradient(top, #e1e1e1, #9b9b9b);
-  /*@include box-shadow(0 0 10px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.18), inset 0px -2px 0px rgba(0, 0, 0, 0.35), inset 0 -3px 0 rgba(255,255,255,0.3), inset 0px 14px 14px rgba(255, 255, 255, 0.10));*/
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
-  -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
-  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1); }
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.28), inset 0px -4px 0px rgba(0, 0, 0, 0.4), inset 0 -5px 0 rgba(255, 255, 255, 0.3), inset 0 -6px 0 rgba(255, 255, 255, 0.2), inset 0px 14px 14px rgba(255, 255, 255, 0.1); }
 
 input[type='submit'].insert:before {
   content: "\f01e";
@@ -1079,7 +1078,7 @@ input[type=radio] {
 .wrapper {
   margin: 0 1%; }
 
-.stack, .space-14, .space-24, .space-34, .space-13, .space-23, .space-44, .golden-large, .golden-small, .modified-golden-large, .modified-golden-small, .dashboard-24 {
+.space-14, .space-24, .space-34, .space-13, .space-23, .space-44, .golden-large, .golden-small, .modified-golden-large, .modified-golden-small, .dashboard-24 {
   display: inline-block;
   vertical-align: top;
   float: left;
@@ -1097,7 +1096,7 @@ input[type=radio] {
   background: transparent;
   display: block; }
 
-.stack:first-of-type, .space-14:first-of-type, .space-24:first-of-type, .space-34:first-of-type, .space-13:first-of-type, .space-23:first-of-type, .golden-large:first-of-type, .golden-small:first-of-type, .modified-golden-large:first-of-type, .modified-golden-small:first-of-type, .dashboard-24:first-of-type {
+.space-14:first-of-type, .space-24:first-of-type, .space-34:first-of-type, .space-13:first-of-type, .space-23:first-of-type, .golden-large:first-of-type, .golden-small:first-of-type, .modified-golden-large:first-of-type, .modified-golden-small:first-of-type, .dashboard-24:first-of-type {
   margin-left: 0; }
 
 .space-14 {
@@ -1372,15 +1371,25 @@ input[type=radio] {
     display: inline-block;
     float: left; } }
 
+.stack > .breakpoint {
+  margin-left: 0.4876%; }
+  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+    .stack > .breakpoint {
+      margin: 0; } }
+  @media only screen and (min-device-width: 320px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-width: 320px) and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-width: 320px) and (min-resolution: 1.5dppx) and (orientation: portrait) {
+    .stack > .breakpoint {
+      margin: 0; } }
+  @media only screen and (max-device-width: 480px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-device-width: 480px) and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: landscape), only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (max-device-width: 480px) and (min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (max-device-width: 480px) and (min-resolution: 1.5dppx) and (orientation: landscape) {
+    .stack > .breakpoint {
+      margin: 0; } }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .stack > .space-14 {
     width: 100%;
-    background: #000;
     margin-left: 0; } }
 @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
   .stack > .space-14 {
     width: 100%;
-    background: #000;
     margin-left: 0; } }
 
 .rows:before, .rows:after, .form-rows:before, .form-rows:after {
