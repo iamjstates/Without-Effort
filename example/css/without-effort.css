@@ -1106,7 +1106,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 24.63433333%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-14 {
       width: 100%;
       margin-left: 0; } }
@@ -1133,7 +1133,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 49.75622222%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-24 {
       width: 100%;
       margin-left: 0; } }
@@ -1166,7 +1166,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 74.8780667%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-34 {
       width: 100%;
       margin-left: 0; } }
@@ -1212,7 +1212,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 33.00829629%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-13 {
       width: 100%;
       margin-left: 0; } }
@@ -1236,7 +1236,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 66.50414815%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-23 {
       width: 100%; } }
   @media only screen and (max-device-width: 320px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-resolution: 1.5dppx) and (orientation: portrait) {
@@ -1257,7 +1257,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 61.666666666666666%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .golden-large {
       width: 100%;
       margin-left: 0; } }
@@ -1289,7 +1289,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 37.333333333333333%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .golden-small {
       width: 100%;
       margin: 0; } }
@@ -1315,7 +1315,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 71%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .modified-golden-large {
       width: 100%;
       margin: 0; } }
@@ -1341,7 +1341,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 28.333333333333333%;
   padding: 1em 1em 0.4em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .modified-golden-small {
       width: 100%;
       margin: 0; } }
@@ -1373,7 +1373,7 @@ input[type=radio] {
 
 .stack > .breakpoint {
   margin-left: 0.4876%; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .stack > .breakpoint {
       margin-left: 0; } }
   @media only screen and (max-device-width: 320px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-resolution: 1.5dppx) and (orientation: portrait) {
@@ -1422,7 +1422,7 @@ input[type=radio] {
     .space-24-form {
       width: 100%;
       padding: 0.6em 0.8em 0.6em 0.4em; } }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-24-form {
       width: 100%;
       padding: 0.6em 0.8em 0.6em 0.4em; } }
@@ -1434,7 +1434,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 33.15333333333333%;
   padding: 0.6em 0.8em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-13-form {
       width: 100%;
       padding: 0.6em 0.8em 0.6em 0.4em; } }
@@ -1457,7 +1457,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 66.153333333333333333%;
   padding: 0.6em 0.8em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-23-form {
       width: 100%;
       padding: 0.6em 0.8em 0.6em 0.4em; } }
@@ -1484,7 +1484,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 24.87%;
   padding: 0.6em 0.8em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-14-form {
       width: 100%;
       padding: 0.6em 0.8em 0.6em 0.4em; } }
@@ -1510,7 +1510,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 74.45%;
   padding: 0.6em 0.8em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-34-form {
       width: 100%;
       padding: 0.6em 0.8em 0.6em 0.4em; } }
@@ -1530,7 +1530,7 @@ input[type=radio] {
   box-sizing: border-box;
   width: 100%;
   padding: 0.6em 1.2em 0.5em 0.8em; }
-  @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+  @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-44-form, .form-default {
       width: 100%;
       padding: 0.6em 0.8em 0.6em 0.4em; } }
