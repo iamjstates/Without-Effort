@@ -15,6 +15,9 @@
 .space-14:before,.space-24:before,.space-13:before,.space-23:before,.space-34:before,.space-44:before,.golden-large:before,.golden-small:before,.modified-golden-large:before,.modified-golden-small:before,.dashboard-24:before,.centered:before{content:" ";height:0.25em;background:transparent;display: block;}
 .space-14:after,.space-24:after,.space-13:after,.space-23:after.space-34:after,.space-44:after,.golden-large:after,.golden-small:after,.modified-golden-large:after,.modified-golden-small:after,.dashboard-24:after,.centered:before{content:" ";height: 0.25em;background:transparent;display: block;}
 .space-14:first-of-type,.space-24:first-of-type,.space-34:first-of-type,.space-13:first-of-type,.space-23:first-of-type,.golden-large:first-of-type,.golden-small:first-of-type,.modified-golden-large:first-of-type,.modified-golden-small:first-of-type,.dashboard-24:first-of-type{margin: 0 0 auto auto;}
+.space-14:first-of-type{
+    @include responsive(tablets-retina){margin: 0 0 0.4876em auto;}
+}
 
 .space-14{
     @include box-sizing(border-box);
@@ -24,7 +27,7 @@
     @include responsive(phone-retina){width: 100%;margin: 0 0 0 0.48755556%;}
     @include responsive(phone-retina-landscape){width: 100%;margin: 0 0 0 0.48755556%;}
     @include responsive(tablets-landscape){width: 24.63433333%;}
-    @include responsive(tablets-retina){width:49.75622222%;margin: 0 0 0.4876em 0.48755556%;}
+    @include responsive(tablets-retina){width:49.75622222%;margin: 0 0 0.48755556% 0.48755556%;}
 }
 .space-24{
     @include box-sizing(border-box);
@@ -33,7 +36,7 @@
     @include responsive(phone){width: 100%;margin: 0 0 0 0.48755556%;}
     @include responsive(phone-retina){width: 100%;margin: 0 0 0 0.48755556%;}
     @include responsive(phone-retina-landscape){width: 100%;margin: 0 0 0 0.48755556%;}
-    @include responsive(tablets-retina){width:49.75622222%;margin: 0 0 0.4876em 0.48755556%;}
+    @include responsive(tablets-retina){width:49.75622222%;margin: 0 0 0.48755556% 0.48755556%;}
 }
 .dashboard-24{
     @include box-sizing(border-box);

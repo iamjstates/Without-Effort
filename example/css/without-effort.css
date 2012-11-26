@@ -1099,6 +1099,10 @@ input[type=radio] {
 .space-14:first-of-type, .space-24:first-of-type, .space-34:first-of-type, .space-13:first-of-type, .space-23:first-of-type, .golden-large:first-of-type, .golden-small:first-of-type, .modified-golden-large:first-of-type, .modified-golden-small:first-of-type, .dashboard-24:first-of-type {
   margin: 0 0 auto auto; }
 
+@media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
+  .space-14:first-of-type {
+    margin: 0 0 0.4876em auto; } }
+
 .space-14 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1124,7 +1128,7 @@ input[type=radio] {
   @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
     .space-14 {
       width: 49.75622222%;
-      margin: 0 0 0.4876em 0.48755556%; } }
+      margin: 0 0 0.48755556% 0.48755556%; } }
 
 .space-24 {
   -webkit-box-sizing: border-box;
@@ -1149,7 +1153,7 @@ input[type=radio] {
   @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
     .space-24 {
       width: 49.75622222%;
-      margin: 0 0 0.4876em 0.48755556%; } }
+      margin: 0 0 0.48755556% 0.48755556%; } }
 
 .dashboard-24 {
   -webkit-box-sizing: border-box;
