@@ -1202,20 +1202,16 @@ input[type=radio] {
   padding: 1em 1em 0.4em; }
   @media only screen and (max-device-width: 320px) and (orientation: portrait) {
     .space-13 {
-      width: 100%;
-      margin: 0 0 0 0.48755556%; } }
+      width: 100%; } }
   @media only screen and (max-device-width: 320px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-resolution: 1.5dppx) and (orientation: portrait) {
     .space-13 {
-      width: 100%;
-      margin: 0 0 0 0.48755556%; } }
+      width: 100%; } }
   @media only screen and (max-device-width: 480px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-device-width: 480px) and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: landscape), only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (max-device-width: 480px) and (min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (max-device-width: 480px) and (min-resolution: 1.5dppx) and (orientation: landscape) {
     .space-13 {
-      width: 100%;
-      margin: 0 0 0 0.48755556%; } }
+      width: 100%; } }
   @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
     .space-13 {
-      width: 33.00829629%;
-      margin-left: 0.48755556%; } }
+      width: 33.00829629%; } }
 
 .space-23 {
   -webkit-box-sizing: border-box;

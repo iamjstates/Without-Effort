@@ -67,10 +67,10 @@
     @include box-sizing(border-box);
     width:33.00829629%;
     padding:1em 1em 0.4em;
-    @include responsive(phone){width: 100%;margin: 0 0 0 0.48755556%;}
-    @include responsive(phone-retina){width: 100%;margin: 0 0 0 0.48755556%;}
-    @include responsive(phone-retina-landscape){width: 100%;margin: 0 0 0 0.48755556%;}
-    @include responsive(tablets-retina){width:33.00829629%;margin-left: 0.48755556%;}
+    @include responsive(phone){width: 100%;}
+    @include responsive(phone-retina){width: 100%;}
+    @include responsive(phone-retina-landscape){width: 100%;}
+    @include responsive(tablets-retina){width:33.00829629%;}
 }
 .space-23{
     @include box-sizing(border-box);
