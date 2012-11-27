@@ -15,10 +15,20 @@ body{
 }
 
 .demo{
-    background: rgba(239, 238, 234, 1);
-    @include responsive(sample){background: rgba(130, 130, 180, 0.3);}
+    background: rgba(241, 240, 241, 1);
     @include border-radius(5px);
 }
 p{
     text-shadow:0 1px 0 rgba(255,255,255,0.45);
+}
+
+figure.img {
+  position: relative;
+  border: 1px solid rgba(150,150,150,0.5);
+  @include box-shadow(0 2px 3px rgba(0,0,0,0.20));
+  margin-left:auto;
+  margin-right:auto;
+  height:auto;
+  padding:0.4em;
+  background: rgb(255,255,255);
 }

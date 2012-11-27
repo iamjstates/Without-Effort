@@ -27,7 +27,7 @@ body {
       background: url("../images/background_@2x.png"); } }
 
 .demo {
-  background: #efeeea;
+  background: #f1f0f1;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -39,3 +39,17 @@ body {
 
 p {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
+
+figure.img {
+  position: relative;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 0.4em;
+  background: white; }

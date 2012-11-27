@@ -1105,7 +1105,8 @@ input[type=radio] {
 /*resposive images and video*/
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: block; }
 
 /*fix IE8*/
 @media \0screen {
