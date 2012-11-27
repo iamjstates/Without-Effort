@@ -128,7 +128,7 @@
     @include responsive(tablets){width:49.75622222%;display: inline-block;float:left;}
     @include responsive(tablets-retina){width:49.75622222%;display: inline-block;float:left;}
 }
-.breakpoint{
+.breakpoint > .space-14 {
     margin-left: 0.4876%;
     @include responsive(phone){margin:0 0 0.4876% 0;}
     @include responsive(phone-retina){margin:0 0 0.9752% 0}
