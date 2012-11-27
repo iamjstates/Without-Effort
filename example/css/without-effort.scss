@@ -131,8 +131,10 @@
 .stack > .breakpoint{
     margin-left: 0.4876%;
     @include responsive(phone){margin:0 0 0.4876% 0;}
-    @include responsive(phone-retina){margin:0 0 0.4876% 0;}
-    @include responsive(phone-retina-landscape){margin:0 0 0.4876% 0;}
+    @include responsive(phone-retina){margin:0 0 0.9752% 0}
+    @include responsive(phone-retina-landscape){margin:0 0 0.9752% 0}
+    @include responsive(tablets){width:100%; margin:0 0 0.9752% 0.4876%}
+    @include responsive(tablets-retina){width:100%;margin:0 0 0.9752% 0.4876%;}
 }
 .stack > .space-14{
     @include responsive(tablets){width:100%; margin:0 0 0.9752% 0}
