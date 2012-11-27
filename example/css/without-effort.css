@@ -1083,6 +1083,9 @@ input[type=radio] {
   vertical-align: top;
   float: left;
   margin: 0 0 0.4876% 0.4876%; }
+  @media only screen and (max-device-width: 320px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-o-min-device-pixel-ratio: 3 / 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-resolution: 1.5dppx) and (orientation: portrait) {
+    .space-14, .space-24, .space-34, .space-13, .space-23, .space-44, .golden-large, .golden-small, .modified-golden-large, .modified-golden-small, .dashboard-24 {
+      margin: 0 0 2% 0.4876%; } }
 
 .space-14:before, .space-24:before, .space-13:before, .space-23:before, .space-34:before, .space-44:before, .golden-large:before, .golden-small:before, .modified-golden-large:before, .modified-golden-small:before, .dashboard-24:before, .centered:before {
   content: " ";
