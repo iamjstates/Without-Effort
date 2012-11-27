@@ -124,7 +124,7 @@
     @include responsive(desktop-retina){width: 28.333333333333333%;}
 
 }
-.stack{
+.stack, .breakpoint{
     @include responsive(tablets){width:49.75622222%;display: inline-block;float:left;}
     @include responsive(tablets-retina){width:49.75622222%;display: inline-block;float:left;}
 }

@@ -1346,12 +1346,12 @@ input[type=radio] {
       width: 28.333333333333333%; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .stack {
+  .stack, .breakpoint {
     width: 49.75622222%;
     display: inline-block;
     float: left; } }
 @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) {
-  .stack {
+  .stack, .breakpoint {
     width: 49.75622222%;
     display: inline-block;
     float: left; } }
