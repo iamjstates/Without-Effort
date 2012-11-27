@@ -65,12 +65,12 @@
 }
 .space-13{
     @include box-sizing(border-box);
-    width:33.0597667%;
+    width:33.00826667%;
     padding:1em 1em 0.4em;
     @include responsive(phone){width: 100%;}
     @include responsive(phone-retina){width: 100%;}
     @include responsive(phone-retina-landscape){width: 100%;}
-    @include responsive(tablets-retina){width:33.00597667%;}
+    @include responsive(tablets-retina){width:33.00826667%;}
 }
 .space-23{
     @include box-sizing(border-box);
@@ -130,13 +130,13 @@
 }
 .stack > .breakpoint{
     margin-left: 0.4876%;
-    @include responsive(phone){margin-left:0;}
-    @include responsive(phone-retina){margin-left:0;}
-    @include responsive(phone-retina-landscape){margin-left:0;}
+    @include responsive(phone){margin:0 0 0.4876% 0;}
+    @include responsive(phone-retina){margin:0 0 0.4876% 0;}
+    @include responsive(phone-retina-landscape){margin:0 0 0.4876% 0;}
 }
 .stack > .space-14{
-    @include responsive(tablets){width:100%; margin-left: 0;}
-    @include responsive(tablets-retina){width:100%;margin-left: 0;}
+    @include responsive(tablets){width:100%; margin:0 0 0.4876% 0}
+    @include responsive(tablets-retina){width:100%;margin:0 0 0.4876% 0;}
 }
 .rows:before, .rows:after,.form-rows:before, .form-rows:after {
     content: "";
