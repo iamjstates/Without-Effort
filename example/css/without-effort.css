@@ -1102,6 +1102,15 @@ input[type=radio] {
 .space-14:first-of-type, .space-24:first-of-type, .space-34:first-of-type, .space-44:first-of-type, .space-13:first-of-type, .space-23:first-of-type, .golden-large:first-of-type, .golden-small:first-of-type, .modified-golden-large:first-of-type, .modified-golden-small:first-of-type, .dashboard-24:first-of-type {
   margin: 0 0 0.4876% 0; }
 
+/*resposive images and video*/
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*fix IE8*/
+@media \0screen {
+  img {
+    width: auto; } }
 .space-14 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
