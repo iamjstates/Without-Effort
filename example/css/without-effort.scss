@@ -128,6 +128,12 @@
     @include responsive(tablets){width:49.75622222%;display: inline-block;float:left;}
     @include responsive(tablets-retina){width:49.75622222%;display: inline-block;float:left;}
 }
+
+.stack > .space-14{
+    @include responsive(tablets){width:100%; margin:0 0 0.9752% 0}
+    @include responsive(tablets-retina){width:100%;margin:0 0 0.9752% 0;}
+}
+
 .breakpoint > .space-14 {
     margin-left: 0.4876%;
     @include responsive(phone){margin:0 0 0.4876% 0;}
@@ -135,10 +141,6 @@
     @include responsive(phone-retina-landscape){margin:0 0 0.9752% 0}
     @include responsive(tablets){width:100%; margin:0 0 0.9752% 0.4876%}
     @include responsive(tablets-retina){width:100%;margin:0 0 0.9752% 0.4876%;}
-}
-.stack > .space-14{
-    @include responsive(tablets){width:100%; margin:0 0 0.9752% 0}
-    @include responsive(tablets-retina){width:100%;margin:0 0 0.9752% 0;}
 }
 .rows:before, .rows:after,.form-rows:before, .form-rows:after {
     content: "";
