@@ -56,8 +56,12 @@ img{max-width: 100%;height: auto;display: block;}
     @include responsive(phone-retina){width: 100%;}
     @include responsive(phone-retina-landscape){width: 100%;}
     @include responsive(tablets){width:100%;}
-    @include responsive(tablets-retina){width:100%;}
+    @include responsive(tablets-retina){width:74.8780667%;}
     @include responsive(tablets-landscape){width: 74.8780667%;}
+}
+.space-34+.space-14{
+    @include responsive(tablets-landscape){width: 24.63433333%;}
+    @include responsive(tablets-retina){width:24.63433333%;}
 }
 .space-44{
     @include box-sizing(border-box);
