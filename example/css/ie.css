@@ -15,3 +15,7 @@
 
 .rows {
   display: block; }
+
+section {
+  background: black;
+  padding: 1em; }
