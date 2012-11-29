@@ -51,6 +51,14 @@ b,
 strong {
   font-weight: bold; }
 
+/*better hyphens*/
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; }
+
 code,
 kbd,
 pre,
@@ -990,6 +998,11 @@ label,
 label > span {
   display: block; }
 
+.inline > span, .inline {
+  display: inline-block;
+  padding: 0 0.55em 0 0.25em;
+  font-family: 'OpenSansRegular'; }
+
 select {
   color: #323232;
   font-size: 1.3rem;
@@ -1043,7 +1056,7 @@ select {
     pointer-events: none;
     top: 1.73em; } }
 @media all and (-o-min-device-pixel-ratio: 2 / 2) {
-  input[type=range] {
+  input[type=range], input[type=radio] {
     background: transparent;
     border: 0;
     -webkit-box-shadow: 0 0 0 transparent;
@@ -1056,7 +1069,6 @@ input[type=radio] {
   display: inline-block;
   font-size: 15px;
   line-height: 1em;
-  margin: 0 0.25em 0 0;
   padding: 0;
   width: 1.25em;
   height: 1.25em;
@@ -1069,6 +1081,10 @@ input[type=radio] {
   -moz-background-clip: padding-box;
   background-clip: padding-box;
   vertical-align: text-top; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input[type=checkbox],
+    input[type=radio] {
+      margin: 0.2em 0 0; } }
 
 .hide-text {
   text-indent: 100%;
