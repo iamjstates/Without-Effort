@@ -431,7 +431,11 @@
                         <fieldset>
                             <legend>Form in 75% space</legend>
                             <div class="form-rows">
-                                    <label class="space-44-form"><span>Long Text Area:</span><input type="text" name="fname" placeholder="Insert your first name"></label>
+                                    <label class="space-44-form">
+                                        <span>Long Text Area:</span>
+                                        <input type="text" name="fname" placeholder="Insert your first name">
+                                        <small class="help_text" data-valtype="data">This is sample help text</small>
+                                    </label>
                                 </div>
                                 <div class="form-rows">
                                     <label class="space-24-form"><span>First name:</span><input type="text" name="fname" placeholder="Insert your first name"></label>
@@ -453,10 +457,12 @@
                                     <label for="answer" class="space-24-form" ><span>Answer the Question:</span>
                                         <input type="radio" name="answer" value="yes"><span class="inline">Yes</span>
                                         <input type="radio" name="answer" values="no"><span class="inline">No</span>
+                                        <small class="help_text" data-valtype="data">Just pick one.</small>
                                     </label>
                                     <label for="sky" class="space-24-form" ><span>The Sky is Falling?</span>
                                         <input type="radio" name="sky" value="yes"><span class="inline">Yes</span>
                                         <input type="radio" name="sky" value="no"><span class="inline">No</span>
+                                        <small class="help_text" data-valtype="data">If your not chicken little.</small>
                                     </label>
                                 </div>
                                 <div class="form-rows">
