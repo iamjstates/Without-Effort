@@ -985,8 +985,7 @@ input[type='submit'].insert:before {
   pointer-events: none;
   top: 35px; }
 
-label,
-.badge {
+label, .label, .badge {
   display: inline-block;
   padding: 2px 4px;
   /*font-weight: bold;*/
@@ -995,7 +994,7 @@ label,
   white-space: nowrap;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8); }
 
-label > span {
+label > span, .label {
   display: block; }
 
 .inline > span, .inline {
