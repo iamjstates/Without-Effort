@@ -28,6 +28,7 @@ body {
 
 .demo {
   background: #f1f0f1;
+  border: 1px solid gainsboro;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
