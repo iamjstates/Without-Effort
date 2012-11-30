@@ -1,7 +1,7 @@
 @import 'global';
 
 *{margin:0;padding:0;}
-html,body{height:100%;font-size:87.5%;}
+html,body{height:100%;width:100%;font-size:87.5%;}
 body{
     @include font-smoothing(subpixel-antialiased);
     text-rendering:optimizeLegibility;
