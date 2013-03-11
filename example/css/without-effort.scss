@@ -10,6 +10,12 @@
 }
 .wrapper{
     margin: 0 1%;
+    /*
+    more cowbell? change the margin of the wrapper and uncomment these defaults for mobile.
+    @include responsive(phone){margin: 0 1%}
+    @include responsive(phone-retina){margin: 0 1%;}
+    @include responsive(phone-retina-landscape){margin: 0 1%;}
+    */
 }
 .space-14,.space-24,.space-34,.space-13,.space-23,.space-44,.golden-large,.golden-small,.modified-golden-large,.modified-golden-small,.dashboard-24{display:inline-block;vertical-align:top;float: left;margin: 0 0 0.4876% 0.4876%;@include responsive(phone-retina){margin: 0 0 0.4876% 0.4876%}}
 .space-14:before,.space-24:before,.space-13:before,.space-23:before,.space-34:before,.space-44:before,.golden-large:before,.golden-small:before,.modified-golden-large:before,.modified-golden-small:before,.dashboard-24:before,.centered:before{content:" ";height:0.25em;background:transparent;display: block;}
@@ -248,11 +254,14 @@ img{max-width: 100%;height: auto;display: block;}
 p,h1,h2,h3,address,time{
     margin: 0 1%;
 }
+p{
+    padding: 0 0 15px 0;
+}
 p:first-of-type{
     padding: 10px 0 15px 0;
 }
-p{
-    padding: 0 0 15px 0;
+p:only-of-type{
+    padding: 8px 0 8px 0;
 }
 p:last-of-type{
     padding:0;
