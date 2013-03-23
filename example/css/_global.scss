@@ -3,6 +3,30 @@
 * Assuming pixel size of 14px or 87.5% instead of 10px
 */
 
+@mixin font-face(
+  $name,
+  $font-files,
+  $eot: false,
+  $weight: false,
+  $style: false
+) {
+  $iefont: "#{$eot}?#iefix";
+  @font-face {
+    font-family: quote($name);
+    @if $eot {
+      src: url($eot);
+      $font-files: url($iefont) format("embedded-opentype"), $font-files;
+    }
+    src: unquote($font-files);
+    @if $weight {
+      font-weight: $weight;
+    }
+    @if $style {
+      font-style: $style;
+    }
+  }
+}
+
 @mixin em-font-size($sizeValue: 1.0714){
     // We use a base of 15px
     font-size: $sizeValue + rem;
@@ -18,18 +42,29 @@
     font-size: ($font-size * 0.0714) + em;
 }
 
+@mixin user-agent($media){
+    @if $media == webkit {
+        @media screen and (-webkit-min-device-pixel-ratio:0){@content;}
+    }
+    @else if $media == opera{
+        @media all and (-o-min-device-pixel-ratio: 2/2){@content;}
+    }
+}
+
+/*(min-device-width: 640px) and (max-device-width: 1136px)*/
+
 @mixin responsive($media){
     @if $media == phone {
-        @media only screen and (min-device-width: 320px) and (orientation: portrait) { @content; }
+        @media only screen and (max-device-width: 320px) and (orientation: portrait) { @content; }
     }
     @else if $media == phone-landscape {
-        @media only screen and (min-device-width: 480px) and (orientation: landscape) { @content; }
+        @media only screen and (max-device-width: 480px) and (orientation: landscape) { @content; }
     }
     @else if $media == phone-retina {
-        @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (-o-min-device-pixel-ratio: 3/2) and (orientation: portrait), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (min-resolution: 1.5dppx) and (orientation: portrait) { @content; }
+        @media only screen and (max-device-width: 320px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-o-min-device-pixel-ratio: 3/2) and (orientation: portrait), only screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-device-pixel-ratio: 1.5) and (orientation: portrait), only screen and (max-device-width: 320px) and (min-resolution: 1.5dppx) and (orientation: portrait) { @content; }
     }
     @else if $media == phone-retina-landscape {
-        @media only screen and (min--moz-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (-o-min-device-pixel-ratio: 3/2) and (orientation: landscape), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (min-resolution: 1.5dppx) and (orientation: landscape) { @content; }
+        @media only screen and (max-device-width: 480px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (max-device-width: 480px) and (-o-min-device-pixel-ratio: 3/2) and (orientation: landscape), only screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (max-device-width: 480px) and (min-device-pixel-ratio: 1.5) and (orientation: landscape), only screen and (max-device-width: 480px) and (min-resolution: 1.5dppx) and (orientation: landscape) { @content; }
     }
     @else if $media == tablets {
         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { @content; }
@@ -40,14 +75,11 @@
     @else if $media == netbook {
         @media only screen and (min-width: 800px) and (max-width: 1024px) {@content;}
     }
-    @else if $media == tablets-retina{
-        @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2/1) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: portrait) { @content; }
+    @else if $media == tablets-retina {
+        @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (min-resolution: 2dppx) { @content; }
     }
-    @else if $media == tablets-retina-landscape  {
-        @media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min--moz-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-o-min-device-pixel-ratio: 2/1) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (min-resolution: 2dppx) and (orientation: landscape) { @content; }
-    }
-    @else if $media == sample {
-        @media only screen and (device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) { @content; }
+    @else if $media == tablets-retina-landscape {
+        @media only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min--moz-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-o-min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-device-pixel-ratio: 2), only screen and (device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (min-resolution: 2dppx) { @content; }
     }
     @else if $media == desktop {
         @media only screen and (min-width: 1024px) { @content; }
@@ -160,6 +192,7 @@ $box-shadow-inset : false !default;
 @mixin appearance($params){
     -webkit-appearance: $params;
     -moz-appearance: $params;
+    -o-appearance: $params;
     appearance: $params;
 }
 
@@ -214,16 +247,16 @@ $box-shadow-inset : false !default;
     @include default-linear-gradient($origin, $other);
 }
 
-@mixin retina_filename($image, $type: 'png'){
-    background: url($image + '_@2x.' + $type);
+@mixin retina_filename($image, $type, $default){
+    background: $default url($image + '_@2x.' + $type);
 }
 
-@mixin background-image-retina($image, $type: 'png') {
-    background: url($image + '.' + $type);
+@mixin background-image-retina($image, $type: 'png', $default: transparent) {
+    background: $default url($image + '.' + $type);
     // If we have a retina image then add styles for it too
     @if file_exists(retina_filename($image)){
         @media only screen and (min--moz-device-pixel-ratio:1.3), (-o-min-device-pixel-ratio:2.6/2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx){
-            @include retina_filename($image);
+            @include retina_filename($image, $type, $default);
         }
     }
 }
@@ -234,7 +267,21 @@ $box-shadow-inset : false !default;
     // If we have a retina image then add styles for it too
     @if file_exists(retina_filename($image)){
         @media only screen and (-webkit-min-device-pixel-ratio: 2){
-            background: inline-image(retina_filename($image));
+            @include background-size(image-width($image) auto);
+            background-image: inline-image(retina_filename($image));
         }
     }
+}
+
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal ) {
+  @font-face {
+      font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+      font-weight: $weight;
+      font-style: $style;
+  }
 }
